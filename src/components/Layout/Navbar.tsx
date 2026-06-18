@@ -57,7 +57,7 @@ const Navbar = () => {
   const isWhitePage = ['/about', '/services', '/contact', '/innovation'].includes(location.pathname);
 
   return (
-    <nav className={`fixed w-full z-[100] transition-all duration-500 ${
+    <nav className={`fixed w-full z-[1000] transition-all duration-500 ${
       scrolled || isOpen || isWhitePage ? 'bg-[#0F0712]/90 backdrop-blur-md py-2 shadow-lg' : 'bg-transparent py-6'
     } text-white`}>
       <div className="container-custom flex justify-between items-center">

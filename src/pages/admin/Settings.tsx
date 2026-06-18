@@ -117,6 +117,101 @@ const Settings: React.FC = () => {
              </div>
           </div>
 
+          {/* Homepage Hero Content */}
+          <div className="p-10 space-y-8">
+             <h3 className="text-xs font-black uppercase tracking-[0.3em] text-dark/20 border-b pb-4">Hero Content</h3>
+             <div className="space-y-8">
+                <div className="space-y-2">
+                   <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">Hero Title (HTML Allowed)</label>
+                   <textarea
+                     value={settings.hero_title}
+                     onChange={(e) => setSettings({...settings, hero_title: e.target.value})}
+                     rows={3}
+                     className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors resize-none"
+                   />
+                </div>
+                <div className="space-y-2">
+                   <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">Hero Description</label>
+                   <textarea
+                     value={settings.hero_description}
+                     onChange={(e) => setSettings({...settings, hero_description: e.target.value})}
+                     rows={3}
+                     className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors resize-none"
+                   />
+                </div>
+             </div>
+          </div>
+
+          {/* Corporate Profile */}
+          <div className="p-10 space-y-8">
+             <h3 className="text-xs font-black uppercase tracking-[0.3em] text-dark/20 border-b pb-4">Corporate Profile</h3>
+             <div className="space-y-8">
+                <div className="space-y-2">
+                   <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">About Summary</label>
+                   <textarea
+                     value={settings.about_summary}
+                     onChange={(e) => setSettings({...settings, about_summary: e.target.value})}
+                     rows={3}
+                     className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors resize-none"
+                   />
+                </div>
+                <div className="space-y-2">
+                   <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">CEO Vision Quote</label>
+                   <textarea
+                     value={settings.ceo_quote}
+                     onChange={(e) => setSettings({...settings, ceo_quote: e.target.value})}
+                     rows={3}
+                     className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors resize-none"
+                   />
+                </div>
+                <div className="grid md:grid-cols-2 gap-8">
+                   <div className="space-y-2">
+                      <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">Vision Statement</label>
+                      <textarea
+                        value={settings.vision}
+                        onChange={(e) => setSettings({...settings, vision: e.target.value})}
+                        rows={3}
+                        className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors resize-none"
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">Mission Statement</label>
+                      <textarea
+                        value={settings.mission}
+                        onChange={(e) => setSettings({...settings, mission: e.target.value})}
+                        rows={3}
+                        className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors resize-none"
+                      />
+                   </div>
+                </div>
+             </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="p-10 space-y-8">
+             <h3 className="text-xs font-black uppercase tracking-[0.3em] text-dark/20 border-b pb-4">Call to Action</h3>
+             <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-2">
+                   <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">CTA Title</label>
+                   <input
+                     type="text"
+                     value={settings.cta_title}
+                     onChange={(e) => setSettings({...settings, cta_title: e.target.value})}
+                     className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors"
+                   />
+                </div>
+                <div className="space-y-2">
+                   <label className="text-[10px] font-black uppercase tracking-widest text-dark/40">CTA Tagline (HTML Allowed)</label>
+                   <input
+                     type="text"
+                     value={settings.cta_tagline}
+                     onChange={(e) => setSettings({...settings, cta_tagline: e.target.value})}
+                     className="w-full bg-gray-50 border border-gray-200 py-4 px-6 text-dark font-bold text-sm focus:outline-none focus:border-primary transition-colors"
+                   />
+                </div>
+             </div>
+          </div>
+
           {/* Contact Information */}
           <div className="p-10 space-y-8">
              <h3 className="text-xs font-black uppercase tracking-[0.3em] text-dark/20 border-b pb-4">Contact Information</h3>
